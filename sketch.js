@@ -7,6 +7,7 @@ var bt1I,bt2I,bt3I,bt4I,bt5I,bt6I;
 var rate = 0;
 var info,infoI;
 var cs,csi;
+var input;
 
 
 function preload(){
@@ -35,12 +36,12 @@ function setup() {
 
   report = createSprite(displayWidth/2,displayHeight/2+100);
   report.addImage("reportI",reportI);
-  report.scale = 0.7;
+  report.scale = 0.8;
   report.visible = false;
 
   complain = createSprite(displayWidth/2,displayHeight/2-100);
   complain.addImage("complainI",complainI);
-  complain.scale = 0.75;
+  complain.scale = 0.8;
   complain.visible = false;
 
   info = createSprite(displayWidth/2,displayHeight/2);
@@ -60,182 +61,182 @@ function setup() {
 
   bt1 = createSprite(displayWidth/2-550,displayHeight/2-230);
   bt1.addImage("bt1I",bt1I);
-  bt1.scale = 0.7;
+  bt1.scale = 0.65;
   bt1.visible = false;
 
   bt2 = createSprite(displayWidth/2-275,displayHeight/2-230);
   bt2.addImage("bt2I",bt2I);
-  bt2.scale = 0.7;
+  bt2.scale = 0.65;
   bt2.visible = false;
 
   bt3 = createSprite(displayWidth/2,displayHeight/2-230);
   bt3.addImage("bt3I",bt3I);
-  bt3.scale = 0.7;
+  bt3.scale = 0.65;
   bt3.visible = false;
 
   bt4 = createSprite(displayWidth/2+275,displayHeight/2-230);
   bt4.addImage("bt4I",bt4I);
-  bt4.scale = 0.7;
+  bt4.scale = 0.65;
   bt4.visible = false;
 
   bt5 = createSprite(displayWidth/2+550,displayHeight/2-230);
   bt5.addImage("bt5I",bt5I);
-  bt5.scale = 0.7;
+  bt5.scale = 0.65;
   bt5.visible = false;
 
   bt6 = createSprite(displayWidth/2-550,displayHeight/2-150);
   bt6.addImage("bt6I",bt6I);
-  bt6.scale = 0.7;
+  bt6.scale = 0.65;
   bt6.visible = false;
 
   bt7 = createSprite(displayWidth/2-275,displayHeight/2-150);
   bt7.addImage("bt1I",bt1I);
-  bt7.scale = 0.7;
+  bt7.scale = 0.65;
   bt7.visible = false;
 
   bt8 = createSprite(displayWidth/2,displayHeight/2-150);
   bt8.addImage("bt2I",bt2I);
-  bt8.scale = 0.7;
+  bt8.scale = 0.65;
   bt8.visible = false;
 
   bt9 = createSprite(displayWidth/2+275,displayHeight/2-150);
   bt9.addImage("bt3I",bt3I);
-  bt9.scale = 0.7;
+  bt9.scale = 0.65;
   bt9.visible = false;
 
   bt10 = createSprite(displayWidth/2+550,displayHeight/2-150);
   bt10.addImage("bt4I",bt4I);
-  bt10.scale = 0.7;
+  bt10.scale = 0.65;
   bt10.visible = false;
 
   bt11 = createSprite(displayWidth/2-550,displayHeight/2-70);
   bt11.addImage("bt5I",bt5I);
-  bt11.scale = 0.7;
+  bt11.scale = 0.65;
   bt11.visible = false;
 
   bt12 = createSprite(displayWidth/2-275,displayHeight/2-70);
   bt12.addImage("bt6I",bt6I);
-  bt12.scale = 0.7;
+  bt12.scale = 0.65;
   bt12.visible = false;
 
   bt13 = createSprite(displayWidth/2,displayHeight/2-70);
   bt13.addImage("bt1I",bt1I);
-  bt13.scale = 0.7;
+  bt13.scale = 0.65;
   bt13.visible = false;
 
   bt14 = createSprite(displayWidth/2+275,displayHeight/2-70);
   bt14.addImage("bt2I",bt2I);
-  bt14.scale = 0.7;
+  bt14.scale = 0.65;
   bt14.visible = false;
 
   bt15 = createSprite(displayWidth/2+550,displayHeight/2-70);
   bt15.addImage("bt3I",bt3I);
-  bt15.scale = 0.7;
+  bt15.scale = 0.65;
   bt15.visible = false;
 
   bt16 = createSprite(displayWidth/2-550,displayHeight/2+10);
   bt16.addImage("bt4I",bt4I);
-  bt16.scale = 0.7;
+  bt16.scale = 0.65;
   bt16.visible = false;
 
   bt17 = createSprite(displayWidth/2-275,displayHeight/2+10);
   bt17.addImage("bt5I",bt5I);
-  bt17.scale = 0.7;
+  bt17.scale = 0.65;
   bt17.visible = false;
 
   bt18 = createSprite(displayWidth/2,displayHeight/2+10);
   bt18.addImage("bt6I",bt6I);
-  bt18.scale = 0.7;
+  bt18.scale = 0.65;
   bt18.visible = false;
 
   bt19 = createSprite(displayWidth/2+275,displayHeight/2+10);
   bt19.addImage("bt1I",bt1I);
-  bt19.scale = 0.7;
+  bt19.scale = 0.65;
   bt19.visible = false;
 
   bt20 = createSprite(displayWidth/2+550,displayHeight/2+10);
   bt20.addImage("bt2I",bt2I);
-  bt20.scale = 0.7;
+  bt20.scale = 0.65;
   bt20.visible = false;
 
   bt21 = createSprite(displayWidth/2-550,displayHeight/2+90);
   bt21.addImage("bt3I",bt3I);
-  bt21.scale = 0.7;
+  bt21.scale = 0.65;
   bt21.visible = false;
 
   bt22 = createSprite(displayWidth/2-275,displayHeight/2+90);
   bt22.addImage("bt4I",bt4I);
-  bt22.scale = 0.7;
+  bt22.scale = 0.65;
   bt22.visible = false;
 
   bt23 = createSprite(displayWidth/2,displayHeight/2+90);
   bt23.addImage("bt5I",bt5I);
-  bt23.scale = 0.7;
+  bt23.scale = 0.65;
   bt23.visible = false;
 
   bt24 = createSprite(displayWidth/2+275,displayHeight/2+90);
   bt24.addImage("bt6I",bt6I);
-  bt24.scale = 0.7;
+  bt24.scale = 0.65;
   bt24.visible = false;
 
   bt25 = createSprite(displayWidth/2+550,displayHeight/2+90);
   bt25.addImage("bt1I",bt1I);
-  bt25.scale = 0.7;
+  bt25.scale = 0.65;
   bt25.visible = false;
 
   bt26 = createSprite(displayWidth/2-550,displayHeight/2+170);
   bt26.addImage("bt2I",bt2I);
-  bt26.scale = 0.7;
+  bt26.scale = 0.65;
   bt26.visible = false;
 
   bt27 = createSprite(displayWidth/2-275,displayHeight/2+170);
   bt27.addImage("bt3I",bt3I);
-  bt27.scale = 0.7;
+  bt27.scale = 0.65;
   bt27.visible = false;
 
   bt28 = createSprite(displayWidth/2,displayHeight/2+170);
   bt28.addImage("bt4I",bt4I);
-  bt28.scale = 0.7;
+  bt28.scale = 0.65;
   bt28.visible = false;
 
   bt29 = createSprite(displayWidth/2+275,displayHeight/2+170);
   bt29.addImage("bt5I",bt5I);
-  bt29.scale = 0.7;
+  bt29.scale = 0.65;
   bt29.visible = false;
 
   bt30 = createSprite(displayWidth/2+550,displayHeight/2+170);
   bt30.addImage("bt6I",bt6I);
-  bt30.scale = 0.7;
+  bt30.scale = 0.65;
   bt30.visible = false;
 
   bt31 = createSprite(displayWidth/2-550,displayHeight/2+250);
   bt31.addImage("bt1I",bt1I);
-  bt31.scale = 0.7;
+  bt31.scale = 0.65;
   bt31.visible = false;
 
   bt32 = createSprite(displayWidth/2-275,displayHeight/2+250);
   bt32.addImage("bt2I",bt2I);
-  bt32.scale = 0.7;
+  bt32.scale = 0.65;
   bt32.visible = false;
 
   bt33 = createSprite(displayWidth/2,displayHeight/2+250);
   bt33.addImage("bt3I",bt3I);
-  bt33.scale = 0.7;
+  bt33.scale = 0.65;
   bt33.visible = false;
 
   bt34 = createSprite(displayWidth/2+275,displayHeight/2+250);
   bt34.addImage("bt4I",bt4I);
-  bt34.scale = 0.7;
+  bt34.scale = 0.65;
   bt34.visible = false;
 
   bt35 = createSprite(displayWidth/2+550,displayHeight/2+250);
   bt35.addImage("bt5I",bt5I);
-  bt35.scale = 0.7;
+  bt35.scale = 0.65;
   bt35.visible = false;
 
   bt36 = createSprite(displayWidth/2-550,displayHeight/2+330);
   bt36.addImage("bt6I",bt6I);
-  bt36.scale = 0.7;
+  bt36.scale = 0.65;
   bt36.visible = false;
 
   
@@ -246,8 +247,8 @@ function draw() {
 
   rate = rate+Math.round(World.frameRate/60);;
 
-  console.log(screenState)
-  console.log(rate)
+  console.log()
+  console.log()
 
   drawSprites();
 
